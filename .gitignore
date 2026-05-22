@@ -1,0 +1,42 @@
+# --- WordPress runtime / install (NOT tracked) ---
+# The repo is the recipe; WordPress core, DB and uploads are runtime state.
+wp-admin/
+wp-includes/
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+wp-*.php
+xmlrpc.php
+index.php
+.htaccess
+wp-config.php
+
+# Database dumps (content lives here, but it's runtime state — export
+# deliberately if needed, don't auto-commit). Keep them out by default.
+*.sql
+*.sqlite
+
+# --- Local by Flywheel ---
+# Local's own machine-specific files
+*.local
+conf/
+logs/
+
+# --- Secrets / credentials (NEVER commit) ---
+.env
+.env.*
+*secret*
+*credentials*
+auth.json
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# --- Node (if any theme tooling is added later) ---
+node_modules/
+npm-debug.log*
