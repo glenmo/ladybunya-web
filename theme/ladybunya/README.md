@@ -1,8 +1,9 @@
 # Lady Bunya child theme
 
 A child theme of **Twenty Twenty-Five** that applies the Lady Bunya brand:
-warm palette + Fraunces (headings) / Mulish (body), with fonts bundled locally
-so the site has no dependency on Google's font CDN.
+the real brand palette (ocean green, bone, gold, soft rose, warm grey) plus
+Fraunces (headings) / Mulish (body), with fonts bundled locally so the site has
+no dependency on Google's font CDN.
 
 ## What's in here
 
@@ -20,12 +21,14 @@ colours or font sizes there and they flow through the whole site.
 
 | Token | Hex | Used for |
 |-------|-----|----------|
-| Warm cream | `#FBF6EF` | page background |
-| Soft charcoal | `#3A3036` | body text |
-| Deep plum | `#6E2A5B` | headings, primary |
-| Terracotta | `#C45A2A` | links, buttons |
-| Magenta pink | `#D4537E` | secondary accent |
-| Eucalypt green | `#5E7A52` | earth / nature sections |
+| Bone Light | `#FAF7F2` | page background |
+| Warm Grey | `#6F7774` | body text |
+| Ocean Green | `#1F4E4A` | headings, links, primary buttons |
+| Gold | `#C9A45C` | accents, button hover (never overpowering) |
+| Soft Rose | `#E4A6B0` | supporting graphics only — "lipstick, not skeleton" |
+
+Brand rules honoured: gold is an accent only; soft rose never appears in the
+logo mark itself, only in supporting graphics; headings are serif, body is sans.
 
 ## Installing it on the dev site
 
