@@ -56,7 +56,6 @@ wp theme install twentytwentyfive --activate
 
 # Apply a warm style variation if available (falls back silently if not).
 # You/Sharni can change this visually later under Appearance > Editor > Styles.
-wp theme mod set 2>/dev/null || true
 
 echo
 echo "=== 2. Remove default WordPress junk ==="
@@ -189,9 +188,6 @@ for slug in home about offerings events blog contact; do
   pid="$(wp post list --post_type=page --name="$slug" --field=ID --format=ids)"
   wp menu item add-post "Primary" "$pid" >/dev/null
 done
-# Try to assign to the theme's primary location (name can vary by theme).
-wp menu location assign "Primary" primary 2>/dev/null \
-  || echo "  (couldn't auto-assign menu location — set it under Appearance > Menus)"
 
 echo
 echo "=== 7. Booking plugin: install Amelia (configure in its UI after) ==="
